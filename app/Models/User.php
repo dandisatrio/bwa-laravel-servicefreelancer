@@ -68,7 +68,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    //one to many
+    //one to one
     public function detail_user()
     {
         return $this->hasOne(DetailUser::class, 'users_id');
